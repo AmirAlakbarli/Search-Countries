@@ -1,0 +1,102 @@
+.countryDetails {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+
+  strong {
+    font-weight: 600;
+  }
+
+  .detailFlag {
+    width: 45%;
+
+    img {
+      width: 100%;
+      aspect-ratio: 5/3;
+    }
+  }
+
+  .detailText {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .countryInfo {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .GeoInfo,
+      .publicInfo {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    .borderCountries {
+      strong {
+        margin-right: 13px;
+      }
+
+      .borderLink {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 0 5px rgb(178, 178, 178);
+        padding: 8px;
+        margin-right: 12px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countryDetails {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .detailFlag {
+      width: 100%;
+    }
+
+    .detailText {
+      width: 100%;
+      margin-top: 20px;
+
+      .countryInfo{
+        flex-direction: column;
+        gap: 40px;
+
+        .GeoInfo, .publicInfo{
+          width: 100%;
+        }
+      }    
+
+      .borderCountries{
+        p{
+          width: 100%;
+        }
+        strong{
+          display: inline-block;
+          margin-bottom: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

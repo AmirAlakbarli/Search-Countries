@@ -1,0 +1,72 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+}
+
+
+// ! design change to dark mode
+
+.App {
+  min-height: 100vh;
+}
+
+.light {
+  background-color: rgb(245, 245, 245);
+}
+
+.dark {
+  background-color: #212930;
+
+  * {
+    color: white;
+  }
+
+  .home {
+    background-color: #212930;
+  }
+
+  .home form,
+  .home form label,
+  .home form input {
+    background-color: #2b3945;
+  }
+
+  .home form input {
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  .navbar .navbarcontainer .navbar-right button,
+  .countryList,
+  .country .buttonBack,
+  .countryDetails .detailText .borderCountries .borderLink,
+  .selectRegion .dropDownHeader,
+  .selectRegion .dropDownListContainer,
+  .selectRegion .dropDownHeader,
+  .selectRegion .listItem {
+    background-color: #2b3945 !important;
+    box-shadow: 0 0 5px rgb(52, 52, 52);
+  }
+
+  .countryDetails .detailText .borderCountries .borderLink {
+    color: white;
+  }
+
+  .selectRegion .dropDownHeader,
+  .selectRegion .listItem {
+    &:hover {
+      background-color: white !important;
+      color: #2b3945 !important;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.country {
+  width: 100%;
+  padding: 50px 5% 0 5%;
+
+  .buttonBack {
+    background-color: white;
+    box-shadow: 0 0 5px rgb(178, 178, 178);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,94 @@
+.home {
+
+  padding-top: 30px;
+
+  .homeContainer {
+    width: 90%;
+    margin: auto;
+
+    .searching {
+      display: flex;
+      justify-content: space-between;
+
+      .selectRegion {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+
+        .dropDownContainer {
+          cursor: pointer;
+          width: 100%;
+
+          .dropDownHeader {
+            &:hover {
+              background-color: #2b3945;
+              color: white;
+            }
+
+            border-radius: 5px;
+            width: 100%;
+            padding: 20px 10px 20px 20px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .allCountries {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+
+
+    }
+  }
+
+  .loadingSpinner {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    .homeContainer {
+      width: 90%;
+
+      .searching {
+        flex-direction: column;
+
+        .selectRegion {
+          margin: 40px 0;
+          width: 60%;
+
+          .dropDownContainer {
+
+            .dropDownHeader {
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+
+      .allCountries {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    .loadingSpinner {
+      height: 20vh;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.countryList {
+  width: calc(25% - 30px);
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 5px rgb(178, 178, 178);
+
+  .countryFlag {
+    width: 100%;
+
+    img {
+      width: 100%;
+      aspect-ratio: 5/3;
+    }
+  }
+
+  .countryInfo {
+    width: 100%;
+    padding: 30px 0 45px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countryList {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .countryInfo {
+      padding: 40px 30px;
+      gap: 20px;
+      aspect-ratio: 2/1;
+    }
+  }
+}
