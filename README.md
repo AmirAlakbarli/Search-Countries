@@ -1,4 +1,4 @@
-# [Live Demo](https://amiralakbarli-searchcountries.netlify.app/)
+# [Live Demo](https://amiralakbarli.github.io/Search-Countries/)
 
 
 # Frontend Mentor - REST Countries API with color theme switcher
