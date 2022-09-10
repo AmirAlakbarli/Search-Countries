@@ -38,7 +38,6 @@ function App() {
     <div className={`App ${mode}`}>
       <div className="App-container">
         <Header mode={mode} setMode={setMode} refMode={refMode} />
-        <div><h1>Salam dunya</h1></div>
         <Routes>
           <Route
             path="/"
